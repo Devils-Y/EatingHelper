@@ -1,0 +1,5 @@
+<resources>
+     <string name="app_name">吃饭小助手</string>
+     <string name="startlocation">开始定位</string>
+     <string name="stoplocation">停止定位</string>
+</resources>

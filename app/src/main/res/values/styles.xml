@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+     <!-- Base application theme. -->
+     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+          <!-- Customize your theme here. -->
+          <item name="colorPrimary">@color/colorPrimary</item>
+          <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+          <item name="colorAccent">@color/colorAccent</item>
+     </style>
+
+     <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+          <item name="android:windowIsTranslucent">true</item>／／变透明
+          <item name="android:windowBackground">@android:color/transparent</item>／／背景颜色为透明
+          <item name="windowActionBar">false</item>／／去掉ActionBar
+          <item name="android:windowNoTitle">true</item>／／去掉标题
+          <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+     </style>
+
+     <style name="animTranslate">
+          <item name="android:windowEnterAnimation">@anim/translate_in</item>
+          <item name="android:windowExitAnimation">@anim/translate_out</item>
+     </style>
+</resources>

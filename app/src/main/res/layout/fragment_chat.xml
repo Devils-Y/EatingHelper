@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:fitsSystemWindows="true">
+
+
+     <com.baidu.aip.chatkit.message.MessagesList
+          android:id="@+id/messagesList"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_above="@+id/input"
+          android:layout_marginBottom="1px"
+          app:incomingAvatar="@drawable/bot"
+          app:incomingBubbleDrawable="@drawable/chat_incoming_bg"
+          app:outcomingAvatar="@drawable/user"
+          app:outcomingBubbleDrawable="@drawable/chat_outcoming_bg"/>
+
+     <View
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_above="@+id/input"
+          android:background="#e8e8e8"/>
+
+     <com.baidu.aip.chatkit.message.MessageInput
+          android:id="@+id/input"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:background="@color/input_bg_color"
+          android:elevation="1dp"
+          android:translationZ="1dp"
+          app:inputBackground="@drawable/chat_text_input_bg"
+          app:inputHint="想吃什么呢?"/>
+
+
+</RelativeLayout>
